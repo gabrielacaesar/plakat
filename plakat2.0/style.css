@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px|Source+Sans+Pro');
+
+* {
+	box-sizing: border-box; /* serve para o quê?*/
+}
+
+body {
+	font-family: 'Open Sans', 'Slabo', 'Source Sans Pro';
+	margin: 0;
+}
+
+nav {
+	background: #FF00BF;
+	height: 50px;
+	width: 1024px;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul li {
+	border: white 3px solid;
+	height: 50px;
+	margin-left: 2px;
+	left: 0;
+	top: 0;
+}
+
+nav a {
+	padding: 100px;
+	color: white;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+/* aqui começa BANNER */
+
+#banner {
+	background-image: url(http://puc-riodigital.com.puc-rio.br/media/DSC_7807.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 450px;
+	opacity: 0.7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+#banner h1, #banner h2 {
+	color: #000000;
+	background: white;
+}
+
+#banner h1 {
+	font-size: 60px;
+}
+
+#banner h2 {
+	font-size: 35px;
+}
+
+#responsivMenu {
+	width: 30px;
+	height: 30px;
+	background: #FF00BF;
+}
+
+#responsivMenu span {
+	width: 10px;
+	height: 2px;
+	margin: 1px;
+	background: white;
+	display: block;
+
+}
+
+/* aqui começa a parte dos CARDS */
+
+.wrap {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 40%;
+	min-height: 200px;
+	padding: 20px;
+	margin: 6px;
+}
+
+.cards:hover {
+	box-shadow: 1px 2px 10px gray;
+}
+
+.cards.row .title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cards.row .subtitle {
+	font-size: 16px;
+}
+
+.cards button {
+	width: 70px;
+	height: 20px;
+	border-radius: 10%;
+	background: none;
+}
+
+.cards a {
+	padding: 5px;
+	color: black;
+}
+
+/* RED */
+
+.cards.row.red button, .cards.row.red {
+	border: red 1px solid;
+}
+
+.cards.row.red button:hover {
+	background: red;
+}
+
+.cards.row.red button a:hover {
+	color: white;
+}
+
+/* GREEN */
+
+.cards.row.green button, .cards.row.green {
+	border: green 1px solid;
+}
+
+.cards.row.green button:hover {
+	background: green;
+}
+
+.cards.row.green button a:hover {
+	color: white;
+}
+
+/* BLUE */
+
+.cards.row.blue button, .cards.row.blue {
+	border: blue 1px solid;
+}
+
+.cards.row.blue button:hover {
+	background: blue;
+}
+
+.cards.row.blue button a:hover {
+	color: white;
+}
+
+/* ORANGE */
+
+.cards.row.orange button, .cards.row.orange {
+	border: orange 1px solid;
+}
+
+.cards.row.orange button:hover {
+	background: orange;
+}
+
+.cards.row.orange button a:hover {
+	color: white;
+}
+
+/* FOOTER */
+
+footer {
+	height: 50px;
+	background: #FF00BF;
+}
+
+footer p {
+	color: white;
+	font-weight: 200;
+}
+
+/* RESPONSIV */
+
+@media (max-width: 500px) {
+	.cards {
+		width: 90%;
+	}
+}
+
+
